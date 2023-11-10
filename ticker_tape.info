@@ -1,0 +1,5 @@
+name = Ticker Tape
+description = A smooth horizontal news like ticker tape using CSS transform on infinite loop
+backdrop = 1.x
+version = 1.x-1.x
+type = module
