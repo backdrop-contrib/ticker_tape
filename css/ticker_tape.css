@@ -31,16 +31,12 @@ $duration: 30s;
 
   width: 120%;
   overflow: hidden;
-  /* height: 4rem; */
-  background-color: rgba(#000, 0.9);
   padding-left: 100%;
   box-sizing: content-box;
 
   .ticker {
 
     display: inline-block;
-    height: 4rem;
-    line-height: 4rem;
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
@@ -59,10 +55,7 @@ $duration: 30s;
 }
 
 .views-row {
-  display: inline-flex;
-  padding: 0 2rem;
-  /* font-size: 2rem; */
-  color: black;
+  display: inline-flex;/
   flex-direction: row;
   flex-wrap: nowrap;
 }
