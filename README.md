@@ -8,6 +8,25 @@ None
 Install this module using the official Backdrop CMS instructions at https://docs.backdropcms.org/documentation/extend-with-modules
 
 ## Documentation:
+Create a new View with a Block.
+
+Select the "Horizontal Ticker Tape" Format
+
+Configure the Settings for the Horizontal Ticker Tape
+ - CSS Padding between items.
+ - CSS Padding between fields.
+ - CSS Height of the wrapper.
+ - Duration in seconds.
+
+Add fields
+
+Under "Block Settings"
+Add a block name under "Block admin label"
+
+Save View
+
+Configure layout and add the Views Block.
+
 
 ## TODO - Add documentation
 Additional documentation is located in the Wiki: https://github.com/backdrop-contrib/ticker_tape/wiki
