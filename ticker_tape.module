@@ -26,9 +26,9 @@ function ticker_tape_views_api() {
 }
 
 /**
- * Implements hook_library_info().
+ * Implements hook_libraries_info().
  */
-function ticker_tape_library_info() {
+function ticker_tape_libraries_info() {
   $libraries = array();
   $libraries['ticker_tape'] = array(
     'title' => 'Views Ticker Tape',
