@@ -20,22 +20,16 @@ function ticker_tape_views_api() {
   $module_path = backdrop_get_path('module', 'ticker_tape');
   return array(
     'api' => '3.0',
-    'path' => $module_path,
-    'template_path' => $module_path,
+    'path' => $module_path . '/views',
+    //'template path' => $module_path,
   );
 }
 
-/**
- * Implements hook_libraries_info().
- */
-function ticker_tape_libraries_info() {
-  $libraries = array();
-  $libraries['ticker_tape'] = array(
-    'title' => 'Views Ticker Tape',
-    'version' => '1.0',
-    'css' => array(
-      backdrop_get_path('module', 'ticker_tape') . '/css/ticker_tape.css' => array(),
-    ),
-  );
-  return $libraries;
-}
+backdrop_add_css( backdrop_get_path('module', 'ticker_tape') . '/css/ticker_tape.css',
+  array('type' => 'file',
+    'preprocess' => TRUE,
+    // Load very early so that it's very easy for other CSS to override it.
+    'group' => CSS_SYSTEM,
+    'weight' => -1000,
+  )
+);

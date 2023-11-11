@@ -34,7 +34,7 @@ print '</div></div>';
 $viewname = $view->name;
 $viewname = str_replace('_', '-', $viewname);
 $module_path = backdrop_get_path('module', 'ticker_tape');
-require_once $module_path . '/libraries/class-php-css.php';
+require_once $module_path . '/includes/class-php-css.php';
 
 use CarlosRios\PHP_CSS;
 $css = new PHP_CSS();
