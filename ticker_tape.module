@@ -3,3 +3,39 @@
  * @file
  * Ticker_Tape  - Ticker Tape to scroll text horizontally with pure CSS
  */
+
+ /**
+ * Implements hook_autoload_info.
+ */
+function ticker_tape_autoload_info() {
+  return array(
+    'ticker_tape_horizontal_plugin_style' => '/styles/horizontal/ticker_tape_horizontal_plugin_style.inc',
+  );
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function ticker_tape_views_api() {
+  $module_path = backdrop_get_path('module', 'ticker_tape');
+  return array(
+    'api' => '3.0',
+    'path' => $module_path,
+    'template_path' => $module_path,
+  );
+}
+
+/**
+ * Implements hook_library_info().
+ */
+function ticker_tape_library_info() {
+  $libraries = array();
+  $libraries['ticker_tape'] = array(
+    'title' => 'Views Ticker Tape',
+    'version' => '1.0',
+    'css' => array(
+      backdrop_get_path('module', 'ticker_tape') . '/css/ticker_tape.css' => array(),
+    ),
+  );
+  return $libraries;
+}

@@ -29,11 +29,9 @@ $duration: 30s;
 
 .ticker-wrap {
 
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  width: 120%;
   overflow: hidden;
-  height: 4rem;
+  /* height: 4rem; */
   background-color: rgba(#000, 0.9);
   padding-left: 100%;
   box-sizing: content-box;
@@ -53,22 +51,18 @@ $duration: 30s;
             animation-timing-function: linear;
    -webkit-animation-name: ticker;
            animation-name: ticker;
-    -webkit-animation-duration: $duration;
+    /** -webkit-animation-duration: $duration;
             animation-duration: $duration;
-
-    &__item {
-
-      display: inline-block;
-
-      padding: 0 2rem;
-      font-size: 2rem;
-      color: white;
-
-    }
-
+    **/
   }
 
 }
 
-body { padding-bottom: 5rem; }
-h1,h2,p {padding: 0 5%;}
+.views-row {
+  display: inline-flex;
+  padding: 0 2rem;
+  /* font-size: 2rem; */
+  color: black;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
