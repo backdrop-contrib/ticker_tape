@@ -16,7 +16,6 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
     $options['ticker_duration'] = array('default' => 30);
     $options['ticker_height'] = array('default' => "150px");
 
-
     return $options;
   }
 
@@ -26,7 +25,7 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
   function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
     $form['layout_info'] = array(
-      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('Select the padding and duration.  Duration is how long the ticker will take to do one full scroll.') . '</p>',
+      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('Change the settings below to customize the display without having to create your own CSS files.') . '</p>',
     );
     $form['ticker_padding_item'] = array(
       '#type' => 'textfield',
@@ -34,15 +33,15 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
       '#size' => 25,
       '#maxlength' => 25,
       '#default_value' => $this->options['ticker_padding_item'],
-      '#description' => t('Enter the required padding around each data item.  Can be em px rem etc...'),
+      '#description' => t('Enter the required padding around each data item.  Can be em, px, rem etc...'),
     );
     $form['ticker_padding_field'] = array(
       '#type' => 'textfield',
       '#title' => t('CSS Padding between fields.'),
       '#size' => 25,
       '#maxlength' => 25,
-      '#default_value' => $this->options['ticker_padding'],
-      '#description' => t('Enter the required padding around each field.  Can be em px rem etc...'),
+      '#default_value' => $this->options['ticker_padding_field'],
+      '#description' => t('Enter the required padding around each field.  Can be em, px, rem etc...'),
     );
     $form['ticker_height'] = array(
       '#type' => 'textfield',
@@ -50,7 +49,7 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
       '#size' => 25,
       '#maxlength' => 25,
       '#default_value' => $this->options['ticker_height'],
-      '#description' => t('Enter the required height of the ticker tape.  Can be em px rem etc...'),
+      '#description' => t('Enter the required height of the ticker tape.  Can be em, px, rem etc...'),
     );
     $form['ticker_duration'] = array(
       '#type' => 'number',
@@ -64,4 +63,3 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
     );
   }
 }
-
