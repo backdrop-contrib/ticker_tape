@@ -5,20 +5,9 @@
  * Default view template to display content using ticker_tape layout_type.
  */
 
- // Padding for the each selection of the results and for each field.
- // The row/selection is then combined into one line.
-$ticker_padding_item = $options['ticker_padding_item'];
-$ticker_padding_field = $options['ticker_padding_field'];
-
-// Duration in seconds
-$ticker_duration = $options['ticker_duration'];
-
-// Height of the ticker wrapper
-$ticker_height = $options['ticker_height'];
-
-// Pre and Post CSS.
+ // Pre and Post CSS.
 $div_class = '';
-$div_class = '<div class="ticker-wrap"><div class="ticker" ' . $css_style;
+$div_class = '<div class="ticker-wrap"><div class="ticker" ';
 
 print $div_class . '>';
 
@@ -29,6 +18,18 @@ foreach ($rows as $id => $row) {
 }
 
 print '</div></div>';
+
+// Padding for the each selection of the results and for each field.
+ // The row/selection is then combined into one line.
+ $ticker_padding_item = $options['ticker_padding_item'];
+ $ticker_padding_field = $options['ticker_padding_field'];
+
+ // Duration in seconds
+ $ticker_duration = $options['ticker_duration'];
+
+ // Height of the ticker wrapper
+ $ticker_height = $options['ticker_height'];
+
 
 //Add CSS for this View
 $viewname = $view->name;
@@ -57,3 +58,4 @@ $css->add_property( 'padding', $ticker_padding_field );
 
 file_put_contents( $module_path . '/css/tickertape.css', $css->css_output() );
 backdrop_add_css( $module_path . '/css/tickertape.css');
+

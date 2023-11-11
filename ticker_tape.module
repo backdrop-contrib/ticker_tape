@@ -9,7 +9,7 @@
  */
 function ticker_tape_autoload_info() {
   return array(
-    'ticker_tape_horizontal_plugin_style' => '/styles/horizontal/ticker_tape_horizontal_plugin_style.inc',
+    'ticker_tape_horizontal_plugin_style' => '/styles/ticker_tape_horizontal_plugin_style.inc',
   );
 }
 
@@ -33,3 +33,15 @@ backdrop_add_css( backdrop_get_path('module', 'ticker_tape') . '/css/ticker_tape
     'weight' => -1000,
   )
 );
+
+
+/**
+ * Implements hook_theme().
+ */
+function ticker_tape_theme() {
+  return array(
+    'ticker-tape-horizontal-plugin-style' => array(
+      'variables' => array('items' => NULL, 'options' => NULL, 'identifier' => NULL),
+    ),
+  );
+}
