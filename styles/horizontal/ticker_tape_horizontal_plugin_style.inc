@@ -59,7 +59,7 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
       '#min' => 1,
       '#max' => 9999,
       '#default_value' => $this->options['ticker_duration'],
-      '#description' => t('Enter the required duration for one loop of the text to take.'),
+      '#description' => t('The ticker tape will take this many seconds to complete one full loop.  The longer the Ticker is, the faster it will scroll.'),
     );
   }
 }

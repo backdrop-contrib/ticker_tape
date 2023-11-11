@@ -54,8 +54,16 @@ $duration: 30s;
 
 }
 
-.views-row {
-  display: inline-flex;/
+.ticker .views-row {
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
+}
+
+/** remove margins for Text formatting to allow text to be centred vertically **/
+.ticker .field-content {
+  margin: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
