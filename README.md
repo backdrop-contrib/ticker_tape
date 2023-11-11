@@ -1,6 +1,5 @@
 # ticker_tape
-A smooth horizontal news like ticker using CSS transform on infinite loop
-
+A smooth horizontal news like ticker tape also called a scrolling marquee using CSS transform on infinite loop
 
 ## Requirements:
 None
@@ -33,4 +32,4 @@ Bugs and Feature requests should be reported in the Issue Queue: https://github.
  - [Albany Hosting] (https://www.albany-hosting.co.uk)
 
 ## License
-This project is GPL v2 software. See the LICENSE.txt file in this directory for complete text.
+This project is GPL v3 software. See the LICENSE.txt file in this directory for complete text.
