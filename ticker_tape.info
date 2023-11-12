@@ -1,6 +1,8 @@
 name = Ticker Tape
 description = A smooth horizontal news like ticker tape also called a scrolling marquee using CSS transform on infinite loop
 backdrop = 1.x
-version = 1.x-1.x
+; version = 1.x-1.x
+; Version is not needed. Backdrop module packager will add it when you do a release
 type = module
-stylesheets[all][] = css/ticker_tape.css
+; These sheets are loaded by preprocess.
+; stylesheets[all][] = css/ticker_tape.css

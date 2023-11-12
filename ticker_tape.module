@@ -9,7 +9,8 @@
  */
 function ticker_tape_autoload_info() {
   return array(
-    'ticker_tape_horizontal_plugin_style' => '/styles/ticker_tape_horizontal_plugin_style.inc',
+    'ticker_tape_horizontal_plugin_style' => 'styles/ticker_tape_horizontal_plugin_style.inc',
+    'CarlosRios\PHP_CSS' => 'includes/class-php-css.php'
   );
 }
 
@@ -24,16 +25,6 @@ function ticker_tape_views_api() {
     //'template path' => $module_path,
   );
 }
-
-backdrop_add_css( backdrop_get_path('module', 'ticker_tape') . '/css/ticker_tape.css',
-  array('type' => 'file',
-    'preprocess' => TRUE,
-    // Load very early so that it's very easy for other CSS to override it.
-    'group' => CSS_SYSTEM,
-    'weight' => -1000,
-  )
-);
-
 
 /**
  * Implements hook_theme().
