@@ -35,7 +35,7 @@ Additional documentation is located in the Wiki: https://github.com/backdrop-con
 Bugs and Feature requests should be reported in the Issue Queue: https://github.com/backdrop-contrib/ticker_tape/issues
 
 ## View live sites to see the module in action.
-
+ - https://backdrop-tuts.club/tutorials/ticker-tape-css
 
 ## Current Maintainer(s):
 - [Steve Moorhouse (albanycomputers)] (https://github.com/albanycomputers)
@@ -44,6 +44,7 @@ Bugs and Feature requests should be reported in the Issue Queue: https://github.
 ## Credits / Inspiration:
  - Inspired by the code on CodePen - https://codepen.io/lewismcarey/pen/GJZVoG
  - Lewis Carey on Codepen.io - https://codepen.io/lewismcarey
+ - @argiepiano - Refactoring my code.
 
 ## Sponsorship:
  - [Albany Computer Services] (https://www.albany-computers.co.uk)

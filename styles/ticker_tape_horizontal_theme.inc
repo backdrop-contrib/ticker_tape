@@ -9,10 +9,6 @@ function template_preprocess_ticker_tape_horizontal_plugin_style(&$variables) {
 
   template_preprocess_views_view_unformatted($variables);
 
-  // The css file you are loading is current empty?
-  backdrop_add_css(backdrop_get_path('module', 'ticker_tape') . '/styles/ticker_tape_horizontal.css');
-  backdrop_add_css(backdrop_get_path('module', 'ticker_tape') . '/css/ticker_tape.css');
-
   $view = $variables['view'];
   $style = $view->style_plugin;
   $options = $style->options;
@@ -50,7 +46,9 @@ function template_preprocess_ticker_tape_horizontal_plugin_style(&$variables) {
   $css->set_selector( '.views-field' );
   $css->add_property( 'padding', $ticker_padding_field );
 
-  // I believe it's best to save this css file to thye public directory.
+  // I believe it's best to save this css file to the public directory.
   file_put_contents('public://tickertape.css', $css->css_output());
   backdrop_add_css('public://tickertape.css');
+
+  backdrop_add_css(backdrop_get_path('module', 'ticker_tape') . '/css/ticker_tape.css');
 }
