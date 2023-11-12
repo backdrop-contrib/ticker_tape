@@ -63,7 +63,7 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
       '#description' => t('The ticker tape will take this many seconds to complete one full loop.  The longer the Ticker is, the faster it will scroll.'),
     );
     $form['ticker_flex_direction'] = array(
-      '#type' => 'select',
+      '#type' => 'radios',
       '#title' => t('Flex Direction'),
       '#options' => array(
         0 => 'row',
