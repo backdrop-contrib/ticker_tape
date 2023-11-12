@@ -2,7 +2,7 @@
 A smooth horizontal news like ticker tape also called a scrolling marquee using CSS transform on infinite loop.
 
 ## Requirements:
-None
+Views (in core)
 
 ## Installation:
 Install this module using the official Backdrop CMS instructions at https://docs.backdropcms.org/documentation/extend-with-modules
