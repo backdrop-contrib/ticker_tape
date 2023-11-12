@@ -62,7 +62,6 @@ function template_preprocess_ticker_tape_horizontal_plugin_style(&$variables) {
   $css->set_selector( '.ticker .views-row' );
   $css->add_property( 'flex-direction', $ticker_flexdirection );
 
-  backdrop_flush_all_caches();
   // I believe it's best to save this css file to the public directory.
   file_put_contents('public://tickertape.css', $css->css_output());
   backdrop_add_css('public://tickertape.css');
