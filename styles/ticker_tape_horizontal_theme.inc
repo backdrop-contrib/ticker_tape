@@ -24,6 +24,18 @@ function template_preprocess_ticker_tape_horizontal_plugin_style(&$variables) {
   // Height of the ticker wrapper
   $ticker_height = $options['ticker_height'];
 
+  // CSS flex-direction
+  $flexvalue = $options['ticker_flex_direction'];
+
+  if ($flexvalue == 0) {
+      $ticker_flexdirection = 'row';
+    } elseif ($flexvalue == 1) {
+      $ticker_flexdirection = 'column';
+    } elseif ($flexvalue == 2) {
+      $ticker_flexdirection = 'row-reverse';
+    } elseif ($flexvalue == 3) {
+      $ticker_flexdirection = 'column-reverse';
+    }
 
   //Add CSS for this View
   $viewname = str_replace('_', '-', $view->name);
@@ -45,6 +57,11 @@ function template_preprocess_ticker_tape_horizontal_plugin_style(&$variables) {
 
   $css->set_selector( '.views-field' );
   $css->add_property( 'padding', $ticker_padding_field );
+
+
+  $css->set_selector( '.ticker .views-row' );
+  $css->add_property( 'flex-direction', $ticker_flexdirection );
+
 
   // I believe it's best to save this css file to the public directory.
   file_put_contents('public://tickertape.css', $css->css_output());

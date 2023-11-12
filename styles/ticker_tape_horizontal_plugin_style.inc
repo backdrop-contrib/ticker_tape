@@ -15,6 +15,7 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
     $options['ticker_padding_field'] = array('default' => "0em 1em");
     $options['ticker_duration'] = array('default' => 30);
     $options['ticker_height'] = array('default' => "150px");
+    $options['ticker_flex_direction'] = array('default' => 0);
 
     return $options;
   }
@@ -60,6 +61,21 @@ class ticker_tape_horizontal_plugin_style extends views_plugin_style {
       '#max' => 9999,
       '#default_value' => $this->options['ticker_duration'],
       '#description' => t('The ticker tape will take this many seconds to complete one full loop.  The longer the Ticker is, the faster it will scroll.'),
+    );
+    $form['ticker_flex_direction'] = array(
+      '#type' => 'select',
+      '#title' => t('Flex Direction'),
+      '#options' => array(
+        0 => 'row',
+        1 => 'column',
+        2 => 'row-reverse',
+        3 => 'column-reverse',
+      ),
+      '#size' => 60,
+      '#default_value' => $this->options['ticker_flex_direction'],
+      '#description' => t('Change how multiple fields are displayed via CSS flex-direction.'),
+      '#multiple' => FALSE,
+      '#tree' => TRUE,
     );
   }
 }
