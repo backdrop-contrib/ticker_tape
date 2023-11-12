@@ -1,5 +1,5 @@
 # ticker_tape
-A smooth horizontal news like ticker tape also called a scrolling marquee using CSS transform on infinite loop
+A smooth horizontal news like ticker tape also called a scrolling marquee using CSS transform on infinite loop.
 
 ## Requirements:
 None
@@ -17,6 +17,7 @@ Configure the Settings for the Horizontal Ticker Tape
  - CSS Padding between fields.
  - CSS Height of the wrapper.
  - Duration in seconds.
+ - Select Flex direction.
 
 Add fields
 
@@ -25,7 +26,7 @@ Add a block name under "Block admin label"
 
 Save View
 
-Configure layout and add the Views Block.
+Configure page layout and add the Views Block.
 
 
 ## TODO - Add documentation
