@@ -1,5 +1,5 @@
 # ticker_tape
-A smooth horizontal news like ticker tape also called a scrolling marquee using CSS transform on infinite loop.
+A Views plugin to create a smooth horizontal news like ticker tape also called a scrolling marquee using only CSS on an infinite loop.
 
 ## Requirements:
 Views (in core)

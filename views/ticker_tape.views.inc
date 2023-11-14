@@ -14,7 +14,7 @@ function ticker_tape_views_plugins() {
     'style' => array(
       'ticker_take_horizontal_plugin_style' => array(
         'title' => t('Horizontal Ticker Tape'),
-        'help' => t('Horizontal Ticker Tape style.'),
+        'help' => t('Smooth Horizontal Ticker Tape style scoller - Left to Right.'),
         'handler' => 'ticker_tape_horizontal_plugin_style',
         'theme' => 'ticker_tape_horizontal_plugin_style',
         'path' => $module_path . '/styles',
