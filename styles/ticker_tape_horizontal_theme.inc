@@ -55,7 +55,7 @@ function template_preprocess_ticker_tape_horizontal_plugin_style(&$variables) {
   $css->set_selector( '.ticker__item' );
   $css->add_property( 'padding', $ticker_padding_item );
 
-  $css->set_selector( '.views-field' );
+  $css->set_selector( '.ticker .views-row' );
   $css->add_property( 'padding', $ticker_padding_field );
 
 
